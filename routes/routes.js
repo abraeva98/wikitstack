@@ -4,7 +4,7 @@ const layout = require("../views/layout");
 
 router.get("/", async (req, res, next) => {
   try {
-    res.send(layout(""));
+    await res.send(layout(""));
   } catch (error) { next(error) }
 });
 
